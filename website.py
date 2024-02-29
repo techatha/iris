@@ -3,9 +3,6 @@ import warnings
 import streamlit as st
 warnings.filterwarnings('ignore')
 
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.model_selection import train_test_split
-
 
 classifier = pickle.load(open('model_iris.pkl', 'rb'))
 
