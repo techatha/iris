@@ -9,7 +9,7 @@ classifier = pickle.load(open('model_iris.pkl', 'rb'))
 
 
 def predict_iris_variety(sepal_length, sepal_width, petal_length, petal_width):
-    prediction = classifier.predict([sepal_length, sepal_width, petal_length, petal_width])
+    prediction = classifier.predict([[sepal_length, sepal_width, petal_length, petal_width]])
     print(prediction)
     return prediction
 
